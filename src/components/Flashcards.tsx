@@ -278,6 +278,11 @@ const SQLFlashcardGrid: React.FC<SQLFlashcardGridProps> = ({ className }) => {
         <Typography variant="h6" color="white" mb={3}>
           Practice SQL questions for Data Specialist interview preparation
         </Typography>
+        <Box mt={4} mb={4}>
+          <Alert severity="info" sx={{ textAlign: 'center' }}>
+            Click on cards to flip between questions and answers. Track your progress with the knowledge buttons.
+          </Alert>
+        </Box>
         
         {/* Progress Stats */}
         <Grid container spacing={2} justifyContent="center" mb={3}>
@@ -457,13 +462,6 @@ const SQLFlashcardGrid: React.FC<SQLFlashcardGridProps> = ({ className }) => {
           );
         })}
       </Grid>
-
-      {/* Footer */}
-      <Box mt={4}>
-        <Alert severity="info" sx={{ textAlign: 'center' }}>
-          Click on cards to flip between questions and answers. Track your progress with the knowledge buttons.
-        </Alert>
-      </Box>
     </Container>
   );
 };
