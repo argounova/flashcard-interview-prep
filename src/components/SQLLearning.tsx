@@ -297,6 +297,22 @@ WHERE to_tsvector('english', content) @@ plainto_tsquery('english', 'database mi
       content: "CREATE (INSERT), READ (SELECT), UPDATE, DELETE - these four operations form the foundation of database interactions."
     },
     {
+      title: "Primary Key",
+      content: "A primary key is a unique, non-null value for each record in a table. Each table can only have one primary key and it may be a single column or combination of columns. Benefits include data integrity by preventing duplicate records, a reliable way to reference specific rows, and they are essential for database relationships. EXAMPLE: A customer table might have a customer_id as a primary key so even if two customers have the same name and address, their customer_id values would be different ensuring each record is unique."
+    },
+    {
+      title: "What is a JOIN?",
+      content: "A JOIN is a SQL operation that combines rows from two or more tables based on a related column between them. It allows you to retrieve data that's spread across multiple tables in a single query.  A JOIN does what it says on the package - it joins data from two tables. EXAMPLE: A customer and their addresses are in separate tables to allow for multiple addresses.  A JOIN would be used when querying the data for that customer."
+    },
+    {
+      title: "Types of JOIN",
+      content: "INNER JOIN: The intersection of two tables - returns only rows that have matching values in both tables (EXAMPLE: get all orders with customer information). LEFT JOIN: Returns all rows from left table plus matching rows from right table (EXAMPLE: get all customers and their orders - shows customers even if they haven't placed any orders). RIGHT JOIN: Similar to LEFT JOIN, but less common (EXAMPLE: get all products and orders - returns products even if they've never been ordered). FULL OUTER JOIN: returns all rows when there is a match in either table (EXAMPLE: get all customers and all orders, showing unmatched records from both sides)."
+    },
+    {
+      title: "SQL vs. MySQL",
+      content: "At a basic level, SQL is the language, it is an abstraction - it is just the syntax of the language with no implementation. MySQL or PostgreSQL are software (relational database management systems RDBMS) that allow you to use a GUI to update schemas, define data types, issue or revoke user permissions, etc. SQL is a coding language used to interact with relational databases, MySQL is software used to implement those relational databases. A good example would be that SQL is like the English language, with rules and syntax, while MySQL is like Microsoft Word - an application that used the English language."
+    },
+    {
       title: "Database Relationships",
       content: "Tables can be related through foreign keys, enabling complex data relationships like one-to-many, many-to-many, and one-to-one associations."
     },
