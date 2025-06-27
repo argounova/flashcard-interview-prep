@@ -1,7 +1,8 @@
 import DataMigrationComponent from "../components/DataMigration";
 import Flashcard from "../components/Flashcards"
 import SQLLearningComponent from "../components/SQLLearning"
-import InterviewPrepComponent from "../components/STARQuestions";
+import SoftSkillsInterviewComponent from "../components/SoftSkills";
+import JobDescriptionHighlights from "@/components/JobDescription";
 
 export default function Home() {
   return (
@@ -9,7 +10,8 @@ export default function Home() {
       <SQLLearningComponent />
       <DataMigrationComponent />
       <Flashcard />
-      <InterviewPrepComponent />
+      <JobDescriptionHighlights />
+      <SoftSkillsInterviewComponent />
     </>
   );
 }
