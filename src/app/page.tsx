@@ -1,3 +1,4 @@
+import GeospatialDataOverview from "@/components/GeospatialData";
 import DataMigrationComponent from "../components/DataMigration";
 import Flashcard from "../components/Flashcards"
 import SQLLearningComponent from "../components/SQLLearning"
@@ -9,6 +10,7 @@ export default function Home() {
     <>
       <SQLLearningComponent />
       <DataMigrationComponent />
+      <GeospatialDataOverview />
       <Flashcard />
       <JobDescriptionHighlights />
       <SoftSkillsInterviewComponent />
